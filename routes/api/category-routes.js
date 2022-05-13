@@ -38,7 +38,7 @@ router.get('/:id', async (req, res) => {
   }
   catch (err) {
     console.log(err);
-    res.status(500).json({ message: 'Oops! Server error.'});
+    res.status(500).json({ message: 'Oops! Server error'});
   }
 });
 
@@ -79,7 +79,7 @@ router.put('/:id', async (req, res) => {
   }
   catch (err) {
     console.log(err);
-    res.status(500).json({ message: 'Oops! Server error.' });
+    res.status(500).json({ message: 'Oops! Server error' });
   }
 });
 
@@ -102,7 +102,7 @@ router.delete('/:id', async (req, res) => {
   }
   catch (err) {
     console.log(err);
-    res.status(500).json({ message: 'Oops! Server error.' });
+    res.status(500).json({ message: 'Oops! Server error' });
   }
 });
 
