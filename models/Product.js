@@ -28,7 +28,7 @@ Product.init(
     },
     // price: decimal, cannot be NULL
     price: {
-      type: DataTypes.DECIMAL,
+      type: DataTypes.DECIMAL(10,2),
       allowNull: false,
       // validate value is a decimal
       validate: {
@@ -45,14 +45,15 @@ Product.init(
         isNumeric: true
       }
     },
-    // category_id: integer, cannot be NULL (FOREIGN KEY)
+    // category_id: integer (FOREIGN KEY)
     category_id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-      // foreignKey that references id from Category model
+      allowNull: true,
+      // foreignKey that references id from Category model, if deleted sets to NULL
       references: {
         model: 'category',
-        key: 'id'
+        key: 'id',
+        onDelete: 'SET NULL'
       }
     }
 

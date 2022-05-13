@@ -17,6 +17,8 @@ Category.init(
     category_name: {
       type: DataTypes.STRING,
       allowNull: false,
+      // stops names from being repeated
+      unique: true,
       // validate len[4] sets/verifies the minimum string length
       validate: {
         len: [4]
