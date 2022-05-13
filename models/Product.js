@@ -19,7 +19,7 @@ Product.init(
     },
     // product_name: string(VARCHAR) cannot be NULL
     product_name: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false,
         // validate len[4] sets/verifies minimum string length
         validate: {
