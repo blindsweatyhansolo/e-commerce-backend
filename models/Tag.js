@@ -16,7 +16,6 @@ Tag.init(
     // tag_name: string(VARCHAR), can be NULL
     tag_name: {
       type: DataTypes.STRING,
-      allowNull: true
     }
   },
   {

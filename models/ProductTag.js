@@ -13,20 +13,18 @@ ProductTag.init(
       primaryKey: true,
       autoIncrement: true
     },
-    // product_id: integer, cannot be NULL (FOREIGN KEY)
+    // product_id: integer (FOREIGN KEY)
     product_id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
       // foreignKey that references id from Product model
       references: {
         model: 'product',
         key: 'id'
       }
     },
-    // tag_id: integer, cannot be NULL (FOREIGN KEY)
+    // tag_id: integer (FOREIGN KEY)
     tag_id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
       // foreignKey that references id from Tag model
       references: {
         model: 'tag',
