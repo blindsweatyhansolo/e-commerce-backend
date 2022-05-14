@@ -7,6 +7,7 @@ router.get('/', async (req, res) => {
   // find all categories, includes associated Product(s)
   try {
     const categories = await Category.findAll({
+      order: ['id'],
       include: [Product]
     });
     res.status(200).json(categories);
@@ -75,7 +76,7 @@ router.put('/:id', async (req, res) => {
       return;
     }
 
-    res.status(200).json(updatedCategory);
+    res.status(200).json({message: 'Category updated!'});
   }
   catch (err) {
     console.log(err);
@@ -98,7 +99,7 @@ router.delete('/:id', async (req, res) => {
       return;
     }
 
-    res.status(200).json(category);
+    res.status(200).json({ message: 'Category deleted!'});
   }
   catch (err) {
     console.log(err);

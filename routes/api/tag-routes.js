@@ -75,7 +75,7 @@ router.put('/:id', async (req, res) => {
       return;
     }
 
-    res.status(200).json(updatedTag);
+    res.status(200).json({message: 'Tag updated!'});
   }
   catch (err) {
     console.log(err);
@@ -98,7 +98,7 @@ router.delete('/:id', async (req, res) => {
       return;
     }
 
-    res.status(200).json(tag);
+    res.status(200).json({message: 'Tag deleted!'});
   }
   catch (err) {
     console.log(err);
