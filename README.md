@@ -30,11 +30,11 @@ This is a back-end application with no front-end implementation, but requires My
 
 ## [Usage:](#table-of-contents)
 Walkthrough Videos:
-1. [Installation / Models & Associations Breakdown]()
-2. [GET ALL Routes]()
-3. [GET SINGLE Routes]()
-4. [POST Routes]()
-5. [PUT / DELETE Routes]()
+1. [Installation](https://drive.google.com/file/d/1QdU3CCgy028uUsrlLauXyX6hK7xvcf-B/view)
+2. [Models & Associations Breakdown](https://drive.google.com/file/d/1WkfLIEYDlrexxrXYyV0YollMr8PfgOAZ/view)
+3. [GET Routes](https://drive.google.com/file/d/10QfYwE7i_jMkE0jLQe3ngblDKQE9b-Ib/view)
+4. [POST Routes](https://drive.google.com/file/d/1xvnhDJTw1mQZZva8w2U0zPtff2cXSrS0/view)
+5. [PUT / DELETE Routes](https://drive.google.com/file/d/1ix0ynIVW9LSX4mGBjiz88wBLVG1dW-F4/view)
 
 ***
 
